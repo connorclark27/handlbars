@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+</head>
+<body>
+
+<h1>
+  This is way <%= descriptor %>
+</h1>
+
+<ul>
+  <% templates.forEach((template) => { %>
+  <li>
+    <%= template.name %> is <%= template.usefulness %>
+  </li>
+  <% }); %>
+</ul>
+
+<% include partials/footer %>
+
+</body>
+</html>
